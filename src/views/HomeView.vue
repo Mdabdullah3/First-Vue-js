@@ -1,20 +1,3 @@
 <template>
-  <div>
- <h1 class="bg-primary">THis is Vue js </h1>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos natus dicta explicabo, officiis est nesciunt maxime necessitatibus autem dolorem!</p>
-  </div>
+  <div></div>
 </template>
-
-<script>
-export default {
-  setup () {
-    
-
-    return {}
-  }
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>
