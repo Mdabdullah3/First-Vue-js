@@ -9,13 +9,29 @@
     :modules="swiperModules"
   >
     <SwiperSlide v-for="(slide, index) in slides" :key="index">
-      <div class="bg-[#E3FFE6] h-screen">
+      <div class="bg-[#E3FFE6] h-screen text-secondary">
         <div class="w-10/12 mx-auto flex items-center justify-between">
           <div class="flex-1">
             <h2 class="tracking-wider text-lg mb-3 font-bold">In this season, find the best 🔥</h2>
             <h1 class="text-5xl tracking-widest leading-tight font-bold">{{ slide.title }}</h1>
-            <button class="bg-secondary text-white px-8 tracking-wider py-3 rounded-full mt-4">
+            <button
+              class="flex items-center gap-2 bg-secondary text-white px-8 tracking-wider py-4 rounded-full mt-8"
+            >
               Explore Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
             </button>
           </div>
           <div class="flex-1">
@@ -32,8 +48,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
-
-// Import required Swiper modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 export default {
@@ -55,7 +69,6 @@ export default {
           title: 'Exclusive collection for everyone'
         }
       ],
-      // Specify Swiper modules
       swiperModules: [Autoplay, Pagination, Navigation]
     }
   }
